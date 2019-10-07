@@ -23,10 +23,11 @@ After this start application
 
 
 If you need:
-This is login and pass in java connection class 
+This is login and pass in java connection class
+##### DB namge : simplemanager_db
 ##### Login : root
 ##### Password : Simplemanager123
-Below full path: 
+Full path: 
 "jdbc:mysql://localhost:3306/simplemanager_db?autoReconnect=true&useSSL=false","root","Simplemanager123"
 
 ### Watch the video:
