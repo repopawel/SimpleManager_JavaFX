@@ -1,0 +1,17 @@
+(options: calculator, notepad, CMD only for windows OS!).
+
+Before start the application you need create MySQL communication (MySQL Server, MySQL Java Connector and if you like MySQL WorkBench). 
+The best way to do this:
+Open your browser and write : "Mysql all in one" link (https://dev.mysql.com/downloads/installer/)  Size :393.4M
+Next step to do: 
+Install MySQL server, java connector and workbench. Default configuration with localhost and port 3306 
+After installaction open workbench app and import database (Database_SimpleManager_MySQL)
+After this start application 
+
+
+If you need:
+This is login and pass in java connection class 
+Login : root
+Password : Simplemanager123
+Below full path: 
+"jdbc:mysql://localhost:3306/simplemanager_db?autoReconnect=true&useSSL=false","root","Simplemanager123"

@@ -1,0 +1,250 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2019-07-18, 10:42:09
+    Author     : PLRAD2SIU
+*/
+
+.tab-header-background{
+    
+    -fx-background-color:  #1c1c1c;
+    
+}
+#tab{
+    
+    -fx-pref-width:60;
+    
+}
+
+#text1{
+    
+-fx-prompt-text-fill: white;    
+    
+    
+}
+
+
+#textField{
+    
+    
+     .input-line{
+	-fx-pref-height: 0px;
+}
+     .input-focused-line{
+	-fx-pref-height: 0px;
+}
+        -fx-text-fill: white;
+}
+
+#button{
+    
+    
+    -fx-background-color: #5f5e60;
+    -fx-text-fill: white;
+    -fx-border-radius:8;
+    -fx-background-radius:8;
+    
+}
+#button:hover{
+    
+    -fx-background-color: #1457cf;
+    
+}
+
+#okbutton{
+    
+    
+    -fx-background-color: #5f5e60;
+    -fx-text-fill: white;
+    -fx-border-radius:8;
+    -fx-background-radius:8;
+    
+}
+#okbutton:hover{
+    
+    -fx-background-color: #20eb0a ;
+    
+}
+
+#exit{
+    
+    
+    -fx-background-color: #5f5e60;
+    -fx-text-fill: white;
+    -fx-border-radius:8;
+    -fx-background-radius:8;
+    
+}
+#exit:hover{
+    
+    -fx-background-color: #e14a4c;
+    
+}
+
+#datePicker {
+    
+    background-color: red;
+}
+
+#datePicker .text-field{
+-jfx-unfocus-color: #5f5e60;
+-fx-prompt-text-fill: #5f5e60 ;
+-fx-text-fill: #FFF;
+}
+.jfx-svg-glyph{
+    
+    -fx-background-color:#FFF;
+}
+.ui-datepicker-prev .ui-icon, .ui-datepicker-next .ui-icon {
+  -fx-background-color:red;
+}
+
+
+/* kolor strzałek kalendarza */
+#datePicker .jfx-button{ 
+   
+   
+  -fx-background-color: #009688; 
+
+}
+
+.table-view .column-header ,
+.table-view .column-header-background,
+.table-view .column-header-background .filler{
+    -fx-background-color:TRANSPARENT;
+}
+/* kolor i grubość linii oddzielajacych kolumny  */
+.table-view .column-header{
+    -fx-border-width : 0 1 0 1;
+    -fx-border-color:  #616061;
+}
+/* kolor i grubość wiersza z nazwami column header  */
+.table-view .column-header .label {
+    -fx-text-fill : #FFF;
+    -fx-padding : 4 0 4 0 ;
+}
+
+/* kolor strzałek sortowania   */
+.table-view .column-header .arrow, .tree-table-view .column-header .sort-order-dot{ 
+    -fx-background-color : #949494;
+}
+
+/* Linia pozioma pod headerem 2 to grubość linii  */
+.table-view .column-header-background{
+    -fx-border-width : 0 0.0 2 0;
+    -fx-border-color:#616061;
+}
+
+/* kolor wierszy parzystych  */
+.table-row-cell:odd{
+    -fx-background-color: #1c1c1c;
+    
+    
+}
+
+/* kolor wierzy nieparzystych*/
+.table-row-cell:even{
+      -fx-background-color: #1c1c1c;
+    
+    
+}
+.table-view{
+ 
+    -fx-font-size: 14px;
+}
+
+/* grubosc linni column*/
+.table-view .table-cell{
+    -fx-border-color:#616061;
+    -fx-border-width:0 1 0 1;
+    -fx-padding : 4 0 4 0 ;
+}
+/* chowa scroll bara bottom */
+.table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow, 
+.table-view *.scroll-bar:horizontal *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: null;
+}
+/* kolor zaznaczenia*/
+.table-row-cell:selected{
+      -fx-background-color: #6acd75 ;
+      
+    
+}
+/* kolor czcionka tekstu w tabelce*/
+.table-column.table-cell {
+    -fx-padding: 0.5em;
+    -fx-font: 12px "Arial";
+    -fx-text-fill: #FFF;
+}
+/* text tabelki w centralnym położeniu */
+.table-view .table-column {
+  -fx-alignment: CENTER;
+}
+
+
+
+
+#datePickerEdit {
+    
+    background-color: red;
+}
+
+#datePickerEdit .text-field{
+-jfx-unfocus-color: #5f5e60;
+-fx-prompt-text-fill: #fff ;
+-fx-text-fill: #FFF;
+}
+
+.ui-datepicker-prev .ui-icon, .ui-datepicker-next .ui-icon {
+  -fx-background-color:red;
+}
+
+
+/* kolor strzałek kalendarza */
+#datePickerEdit .jfx-button{ 
+   
+   
+  -fx-background-color: #009688; 
+
+}
+
+.root {
+   
+}
+.notification {
+    -fx-background-color : rgba(15, 15, 15, 0.8);
+    -fx-background-radius: 5;
+    -fx-effect           : innershadow(two-pass-box, rgba(255, 255, 255, 0.6), 5.0, 0.25, 0, 0);    
+    -foreground-color    : white;
+    -icon-color          : white;
+    
+}
+
+/* Style powiadomien */
+
+.notification .title {
+    -fx-font-size  : 1.283333em;
+    -fx-font-weight: bold;
+    -fx-text-fill  : -foreground-color;
+}
+.notification .message {
+    -fx-font-size       : 1.3em;
+    -fx-content-display : left;
+    -fx-graphic-text-gap: 10;
+    -fx-text-fill       : -foreground-color;
+}

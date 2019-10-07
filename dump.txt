@@ -1,0 +1,93 @@
+CREATE DATABASE  IF NOT EXISTS `simplemanager_db` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_polish_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `simplemanager_db`;
+-- MySQL dump 10.13  Distrib 8.0.16, for Win64 (x86_64)
+--
+-- Host: localhost    Database: simplemanager_db
+-- ------------------------------------------------------
+-- Server version	8.0.16
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+ SET NAMES utf8 ;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `addevents`
+--
+
+DROP TABLE IF EXISTS `addevents`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `addevents` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `DATE` varchar(45) COLLATE utf8_polish_ci DEFAULT NULL,
+  `EVENT` varchar(45) COLLATE utf8_polish_ci DEFAULT NULL,
+  `ENDDATE` varchar(45) COLLATE utf8_polish_ci DEFAULT NULL,
+  `EXPIRES` varchar(10) COLLATE utf8_polish_ci DEFAULT NULL,
+  `OK` varchar(10) COLLATE utf8_polish_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=98 DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `addevents`
+--
+
+LOCK TABLES `addevents` WRITE;
+/*!40000 ALTER TABLE `addevents` DISABLE KEYS */;
+INSERT INTO `addevents` VALUES (89,'2019-09-02','TEST','2019-09-07','EXPIRE','OK');
+/*!40000 ALTER TABLE `addevents` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `printers`
+--
+
+DROP TABLE IF EXISTS `printers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `printers` (
+  `IDPRINTERS` int(11) NOT NULL AUTO_INCREMENT,
+  `DZIAL` varchar(15) COLLATE utf8_polish_ci DEFAULT NULL,
+  `MODEL` varchar(45) COLLATE utf8_polish_ci DEFAULT NULL,
+  `RODZAJ_TUSZU` varchar(25) COLLATE utf8_polish_ci DEFAULT NULL,
+  `IP` varchar(20) COLLATE utf8_polish_ci DEFAULT NULL,
+  `INFO` varchar(35) COLLATE utf8_polish_ci DEFAULT NULL,
+  PRIMARY KEY (`IDPRINTERS`)
+) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `printers`
+--
+
+LOCK TABLES `printers` WRITE;
+/*!40000 ALTER TABLE `printers` DISABLE KEYS */;
+INSERT INTO `printers` VALUES (1,'QC','DELL 225 DW','TONER','10.48.16.42','DRUKARKA W QC'),(2,'CE','DELL 2335 ','TONER','10.48.15.30','DRUKARKA U ELEKTRYKÓW'),(3,'CE','RICOH MPC 2004','TONER','10.48.15.42','DRUKARKA OBOK IT'),(4,'CE','KONICA MINOLTA 958','TONER','10.48.15.45','DRUKARKA KOŁO KUCHNI'),(5,'CE','RICOH MP307','TONER','10.48.15.31','DRUKARKA U MONIKI PODG.'),(6,'CE','HP 521 DN','TONER','10.48.15.44','DRUKARKA W WINMOD'),(7,'CE','HP 8210','TUSZE','10.48.16.220','DRUKARKA PAWEŁ GĄCIAR.'),(8,'HR','HP 521 DN','TONER','10.48.12.43','DRUKARKA NA RECEPCJI '),(9,'PU','EPSON W7015','TUSZE','10.48.16.221','DRUKARKA W PU'),(10,'PU','CANON 4045','TONER','10.48.16.21','DRUKARKA W PU'),(11,'MP','HP 8210','TUSZE','10.48.16.12','DRUKARKA U KRZYSZTOFA PYR.'),(12,'PU','HP 8210','TUSZE','10.48.16.11','DRUKARKA U KRZYSZTOFA BŁASZ.'),(13,'PU','HP 8210','TUSZE','10.48.16.22','DRUKARKA U ANITY KWAŚN.'),(14,'PU','HP 521 DN','TONER','10.48.16.24','DRUKARKA W PU U OLI'),(15,'MP','CANON MP 4001','TONER','10.48.16.228','DRUKARKA POD QC'),(16,'MP','CANON 4235','TONER','10.48.16.234','DRUKARKA W MP'),(17,'MP','HP 7110','TUSZE','10.48.16.232','DRUKARKA W MP'),(18,'ME','NASHUATEC MP4002','TONER','10.48.15.37','DRUKARKA NAD POCZTĄ'),(19,'ME','CANON 6255','TONER','10.48.12.46','DRUKARKA W SAMOLOTACH');
+/*!40000 ALTER TABLE `printers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping events for database 'simplemanager_db'
+--
+
+--
+-- Dumping routines for database 'simplemanager_db'
+--
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2019-09-20  7:56:09

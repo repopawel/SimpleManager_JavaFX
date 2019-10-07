@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="382.0" minWidth="396.0" prefHeight="382.0" prefWidth="396.0" style="-fx-background-color: #494a4d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addPrinters.AddPrintersController">
+   <children>
+      <BorderPane layoutX="88.0" layoutY="138.0" minHeight="384.0" minWidth="396.0" prefHeight="384.0" prefWidth="396.0" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER" minHeight="424.0" minWidth="396.0" prefHeight="424.0" prefWidth="396.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane maxHeight="400.0" maxWidth="400.0" minHeight="40.0" minWidth="200.0" onMouseDragged="#dragMouseEvent" onMousePressed="#mousePressEvent" prefHeight="40.0" prefWidth="801.0" style="-fx-background-color: #5f5e60;">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" layoutX="374.0" layoutY="23.0" onMouseClicked="#closeWindow" size="14.0" />
+                        <ImageView fx:id="logo" fitHeight="20.0" fitWidth="20.0" layoutX="23.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="49.0" layoutY="14.0" prefHeight="17.0" prefWidth="192.0" text="Add Printers" textFill="#f8f8f8">
+                           <font>
+                              <Font name="Georgia Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIconView fill="WHITE" glyphName="MINUS" layoutX="314.0" layoutY="24.0" onMouseClicked="#minWindow" size="14.0" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="SQUARE_ALT" layoutX="344.0" layoutY="24.0" onMouseClicked="#maxWindow" size="14.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <JFXTextField id="text1" fx:id="departmentTextField" focusColor="WHITE" labelFloat="true" maxHeight="400.0" maxWidth="400.0" minWidth="200.0" prefHeight="25.0" prefWidth="280.0" promptText="Department" style="-fx-text-fill: #fff;" stylesheets="@../simpleManager/style.css" unFocusColor="#6b6666">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField id="text1" fx:id="modelTextField" focusColor="WHITE" labelFloat="true" layoutX="30.0" layoutY="125.0" maxHeight="400.0" maxWidth="400.0" minWidth="200.0" prefHeight="25.0" prefWidth="280.0" promptText="Model" style="-fx-text-fill: #fff;" stylesheets="@../simpleManager/style.css" unFocusColor="#6b6666">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField id="text1" fx:id="materialsTextField" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="148.0" maxHeight="400.0" maxWidth="400.0" minWidth="200.0" prefHeight="25.0" prefWidth="280.0" promptText="Materials" style="-fx-text-fill: #fff;" stylesheets="@../simpleManager/style.css" unFocusColor="#6b6666">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField id="text1" fx:id="ipTextField" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="135.0" maxHeight="400.0" maxWidth="400.0" minWidth="200.0" prefHeight="25.0" prefWidth="280.0" promptText="IP Printers" style="-fx-text-fill: #fff;" stylesheets="@../simpleManager/style.css" unFocusColor="#6b6666">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField id="text1" fx:id="infoTextField" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="173.0" maxHeight="400.0" maxWidth="400.0" minWidth="200.0" prefHeight="25.0" prefWidth="280.0" promptText="Info" style="-fx-text-fill: #fff;" stylesheets="@../simpleManager/style.css" unFocusColor="#6b6666">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox alignment="CENTER" minHeight="53.0" minWidth="396.0" prefHeight="53.0" prefWidth="396.0">
+                     <children>
+                        <JFXButton fx:id="saveBtnPrintersEvent" buttonType="RAISED" minHeight="47.0" minWidth="198.0" prefHeight="47.0" prefWidth="198.0" style="-fx-background-color: #1457cf;" text="Save" textFill="WHITE">
+                           <font>
+                              <Font name="Georgia Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="cancelBtnPrintersEvent" buttonType="RAISED" minHeight="47.0" minWidth="197.0" prefHeight="47.0" prefWidth="197.0" style="-fx-background-color: #1457cf;" text="Cancel" textFill="WHITE">
+                           <font>
+                              <Font name="Georgia Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="1.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
